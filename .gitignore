@@ -1,0 +1,39 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.mona/
+
+# Node build artefacts
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Generated media scratch files (the committed demo video is whitelisted below)
+*.webm
+*.wav
+*.mp4
+*.mkv
+*.tmp.mp4
+
+# Local run state
+evidence/_checkpoint.json
+artifacts/_scratch/
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Committed submission assets
+!docs/demo-video-subtitled.mp4
+!frontend/public/demo-video-subtitled.mp4

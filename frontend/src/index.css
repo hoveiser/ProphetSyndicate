@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  background: #050b0a;
+}
+
+body {
+  margin: 0;
+  color: #d7e5df;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.desk-grid {
+  background-image: linear-gradient(rgba(16, 185, 129, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 185, 129, 0.045) 1px, transparent 1px);
+  background-size: 34px 34px;
+}
+
+.mono {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+}
+
+.pane {
+  @apply rounded-lg border border-ridge bg-panel shadow-pane;
+}
+
+.pane-head {
+  @apply flex items-center justify-between gap-3 border-b border-ridge px-4 py-3;
+}
+
+.pane-title {
+  @apply text-[11px] font-semibold uppercase tracking-[0.24em] text-mute;
+}
+
+.tag {
+  @apply rounded border border-ridge px-2 py-[3px] text-[10px] uppercase tracking-[0.18em] text-mute;
+}
+
+.metric {
+  @apply mono text-2xl font-medium text-white;
+}
+
+.label {
+  @apply text-[10px] uppercase tracking-[0.2em] text-mute;
+}
+
+.field {
+  @apply mono w-full rounded border border-ridge bg-obsidian px-3 py-2 text-sm text-white outline-none focus:border-senior;
+}
+
+.action {
+  @apply rounded border border-senior/40 bg-senior/10 px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-senior transition hover:bg-senior/20 disabled:cursor-not-allowed disabled:border-ridge disabled:bg-panel disabled:text-mute;
+}
+
+.action-junior {
+  @apply rounded border border-junior/40 bg-junior/10 px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-junior transition hover:bg-junior/20 disabled:cursor-not-allowed disabled:border-ridge disabled:bg-panel disabled:text-mute;
+}
+
+.action-warn {
+  @apply rounded border border-rebalance/40 bg-rebalance/10 px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-rebalance transition hover:bg-rebalance/20 disabled:cursor-not-allowed disabled:border-ridge disabled:bg-panel disabled:text-mute;
+}
+
+.action-ghost {
+  @apply rounded border border-ridge bg-obsidian px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-mute transition hover:border-senior/40 hover:text-senior;
+}
+
+.row {
+  @apply flex items-center justify-between gap-2 border-b border-ridge/70 py-2 last:border-b-0;
+}
+
+.bar {
+  @apply h-2 w-full overflow-hidden rounded-sm bg-obsidian;
+}
+
+.scroll-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: #1b342c;
+  border-radius: 999px;
+}
