@@ -641,13 +641,16 @@
   "sha256_identity": {
     "local_lf_sha256": "f25eff7c7e17f7db280d330597f60016daeab3564094371e4039d65d70f3ed8d",
     "local_lf_bytes": 36560,
-    "git_blob_sha256": null,
-    "github_raw_sha256": null,
+    "git_blob_sha256": "f25eff7c7e17f7db280d330597f60016daeab3564094371e4039d65d70f3ed8d",
+    "github_raw_sha256": "f25eff7c7e17f7db280d330597f60016daeab3564094371e4039d65d70f3ed8d",
     "onchain_sha256": "f25eff7c7e17f7db280d330597f60016daeab3564094371e4039d65d70f3ed8d",
     "onchain_bytes": 36560,
-    "match_local_git": false,
+    "match_local_git": true,
+    "match_local_raw": true,
     "match_local_onchain": true,
-    "match_all_four": false
+    "match_all_four": true,
+    "raw_url": "https://raw.githubusercontent.com/hoveiser/prophet-syndicate/main/contracts/prophet_syndicate.py",
+    "explorer": "https://genlayer-explorer.vercel.app/contracts/0x206bdF01A814e8ae27EbC4A7aC138995217B95F8"
   },
   "explorer": "https://genlayer-explorer.vercel.app/contracts/0x206bdF01A814e8ae27EbC4A7aC138995217B95F8",
   "verification_method": "every transaction was waited to a terminal status over the studionet RPC and its consensus data (status, result, leader execution result and validator votes) recorded; the explorer UI was not queryable at run time (HTTP 503 DEPLOYMENT_PAUSED), so no explorer claim is made"

@@ -12,10 +12,12 @@ that epoch.
 | | |
 |---|---|
 | Deployed intelligent contract (studionet, chain 61999) | `0x206bdF01A814e8ae27EbC4A7aC138995217B95F8` |
+| Deploy transaction | `0x2ee35b6d60629b83d346790128611d5830ab26e0e272a2e3ab79a95afd637b37` |
+| Deployed commit | `f8cff0a` (tag `studionet-v1`) |
 | Explorer | <https://genlayer-explorer.vercel.app/contracts/0x206bdF01A814e8ae27EbC4A7aC138995217B95F8> |
-| Live desk | <https://hoveiser.github.io/prophet-syndicate/> |
+| Live desk | <https://hoveiser.github.io/ProphetSyndicate/> |
 | Linked ecosystem module | ProphetGrid `0xB0aeDBb6E8056c0a2c90E4BD901bB0f3DA6Bb967` |
-| Contract source | `contracts/prophet_syndicate.py`, 36,560 bytes, pinned runner `py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6` |
+| Contract source | `contracts/prophet_syndicate.py`, 36,560 bytes, sha256 `f25eff7c7e17f7db280d330597f60016daeab3564094371e4039d65d70f3ed8d`, pinned runner `py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6` |
 | Tests | 72 direct mode tests, `genvm-lint check` clean |
 | Evidence | `evidence/studionet_deployment.json`, `docs/adversarial-review.md`, `docs/evidence.md` |
 
